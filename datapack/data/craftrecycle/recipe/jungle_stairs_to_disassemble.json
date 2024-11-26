@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:jungle_stairs"
+        }
+    ],
+    "result": {
+        "id": "minecraft:jungle_slab",
+        "count": 1
+    }
+}

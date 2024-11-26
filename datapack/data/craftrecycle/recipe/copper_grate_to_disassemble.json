@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:copper_grate"
+        }
+    ],
+    "result": {
+        "id": "minecraft:copper_ingot",
+        "count": 12
+    }
+}
