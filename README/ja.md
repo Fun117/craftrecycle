@@ -38,7 +38,7 @@ npm run dev
    ▲ Next.js 15.0.3
    - Local:        http://localhost:3000
 
- ✓ Starting```
+ ✓ Starting...
 ```
 
 ---

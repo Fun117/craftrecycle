@@ -1,13 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
-    "group": "wooden_door",
     "ingredients": [
         {
-            "item": "minecraft:acacia_door"
+            "item": "minecraft:chainmail_boots"
         }
     ],
     "result": {
-        "id": "minecraft:acacia_planks",
+        "id": "minecraft:iron_nugget",
         "count": 2
     }
 }

@@ -69,7 +69,7 @@ export function RecipeCards() {
     if (!filteredRecipes || filteredRecipes.length < 1) {
       return (
         <div className="flex w-full p-2">
-          <h1>検索条件に当てはまるレシピが存在しません。</h1>
+          <h1>No recipes match your search criteria.</h1>
         </div>
       );
     }
