@@ -55,5 +55,5 @@ jobs:
           artifact_name: '[UNZIP ME] craftrecycle v1'
           packsquash_version: latest
           options: |
-            pack_directory = '.'
+            pack_directory = './datapack'
             allow_mods = ['OptiFine']
