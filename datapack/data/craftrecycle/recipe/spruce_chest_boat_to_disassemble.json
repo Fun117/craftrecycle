@@ -1,13 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
-    "group": "wooden_slab",
     "ingredients": [
         {
-            "item": "minecraft:acacia_stairs"
+            "item": "minecraft:spruce_chest_boat"
         }
     ],
     "result": {
-        "id": "minecraft:acacia_slab",
+        "id": "minecraft:chest",
         "count": 1
     }
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,8 +15,12 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Craft Recycle",
-  description: "クラフトリサイクルデータパックのレシピプレビューおよび検索サイト",
+  title: {
+    template: "%s | Craft Recycle",
+    default: "Craft Recycle"
+  },
+  description:
+    "クラフトリサイクルデータパックのレシピプレビューおよび検索サイト",
 };
 
 export default function RootLayout({
@@ -24,11 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"className="dark">
+    <html lang="en" className="dark">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main className="w-full min-h-dvh">{children}</main>
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "group": "wooden_fence_gate",
     "ingredients": [
         {
             "item": "minecraft:acacia_fence_gate"
