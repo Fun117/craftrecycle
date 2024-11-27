@@ -37,9 +37,9 @@ jobs:
         with:
           name: craftrecycle v1
           path: |
-               data/
-               pack.mcmeta
-               pack.png
+               datapack/data/
+               datapack/pack.mcmeta
+               datapack/pack.png
        # Errors if files aren't found
           if-no-files-found: error
   build-packsquash:
