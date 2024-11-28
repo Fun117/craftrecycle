@@ -92,7 +92,7 @@ export function RecipeCards() {
                   />
                 </div>
               </DialogTrigger>
-              <DialogContent>
+              <DialogContent className="max-h-dvh overflow-scroll">
                 <DialogHeader>
                   <DialogTitle>{recipe.fileName}</DialogTitle>
                 </DialogHeader>

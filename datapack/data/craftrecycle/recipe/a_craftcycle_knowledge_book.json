@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "a_craftcycle_knowledge_book",
+    "category": "misc",
+    "show_notification": true,
+    "pattern": [
+        "#FB",
+        " K ",
+        "SOR"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:crafting_table"
+        },
+        "F": {
+            "item": "minecraft:furnace"
+        },
+        "B": {
+            "item": "minecraft:blast_furnace"
+        },
+        "K": {
+            "item": "minecraft:book"
+        },
+        "S": {
+            "item": "minecraft:smoker"
+        },
+        "O": {
+            "item": "minecraft:stonecutter"
+        },
+        "R": {
+            "item": "minecraft:smithing_table"
+        }
+    },
+    "result": {
+        "id": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

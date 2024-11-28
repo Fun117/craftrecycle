@@ -14,6 +14,14 @@ export default function Header() {
       label: "Table",
       href: "/recipe/table",
     },
+    {
+      label: "look_recycle",
+      href: "/recipe/function/look_recycle",
+    },
+    {
+      label: "unlock_recycle",
+      href: "/recipe/function/unlock_recycle",
+    },
   ];
 
   return (

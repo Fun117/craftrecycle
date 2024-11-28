@@ -1,5 +1,8 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "group": "trapdoor_disassemble",
+    "category": "redstone",
+    "show_notification": true,
     "ingredients": [
         {
             "item": "minecraft:iron_trapdoor"

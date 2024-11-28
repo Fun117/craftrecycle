@@ -1,5 +1,8 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "group": "door_to_disassemble",
+    "category": "redstone",
+    "show_notification": true,
     "ingredients": [
         {
             "item": "minecraft:oak_door"
