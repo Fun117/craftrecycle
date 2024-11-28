@@ -1,6 +1,5 @@
 {
     "type": "minecraft:crafting_shapeless",
-    "group": "wooden_fence",
     "ingredients": [
         {
             "item": "minecraft:acacia_fence"

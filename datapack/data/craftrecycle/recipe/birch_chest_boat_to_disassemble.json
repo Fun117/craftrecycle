@@ -1,5 +1,8 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "group": "chest_boat_to_disassemble",
+    "category": "misc",
+    "show_notification": true,
     "ingredients": [
         {
             "item": "minecraft:birch_chest_boat"

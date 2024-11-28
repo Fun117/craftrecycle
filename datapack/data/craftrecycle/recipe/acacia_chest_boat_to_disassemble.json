@@ -1,6 +1,8 @@
 {
     "type": "minecraft:crafting_shapeless",
-    "group": "boat",
+    "group": "chest_boat_to_disassemble",
+    "category": "misc",
+    "show_notification": true,
     "ingredients": [
         {
             "item": "minecraft:acacia_chest_boat"
