@@ -124,6 +124,7 @@ https://fun117.github.io/craftrecycle
 
 ```bash
 git clone https://github.com/Fun117/craftrecycle.git
+cd preview
 npm install
 ```
 
