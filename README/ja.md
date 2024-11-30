@@ -89,11 +89,8 @@
 データパックを使用した動画や配信を行う際は、概要欄やコメント欄など視聴者が確認できる場所にクレジットの記載をお願いします。以下は例です：
 
 ```text
-▼ 制作: Fun117
-https://github.com/fun117
-
-▼ データパックについて
-https://fun117.github.io/craftrecycle
+▼ クラフトリサイクル / 制作: Fun117
+https://craftrecycle.fun117.dev
 ```
 
 二次配布および自作発言は固くお断りしています。不具合やバグの報告は[こちら](https://github.com/Fun117/craftrecycle/issues)からお願いいたします。

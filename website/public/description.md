@@ -85,7 +85,7 @@
 
 ```text
 ▼ クラフトリサイクル / 制作: Fun117
-https://fun117.github.io/craftrecycle
+https://craftrecycle.fun117.dev
 ```
 
 二次配布および自作発言は固くお断りしています。不具合やバグの報告は[こちら](https://github.com/Fun117/craftrecycle/issues)からお願いいたします。
