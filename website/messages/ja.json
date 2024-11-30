@@ -30,15 +30,27 @@
       "links": "リンク"
     }
   },
-  "Home": "ホーム",
   "project": {
     ":title": "クラフトリサイクル",
     ":type": "データパック",
+    "nav": {
+      "items": {
+        "description": "説明",
+        "files": "ファイル",
+        "images": "画像"
+      }
+    },
     "sidecontent": {
       "about project": "プロジェクト概要",
       "created": "作成",
       "license": "ライセンス",
-      "members": "メンバー"
+      "members": "メンバー",
+      "source code": "ソースコード"
+    }
+  },
+  "pages": {
+    "files": {
+      "coming soon": "近日公開"
     }
   }
 }

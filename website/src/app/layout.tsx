@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Murecho } from "next/font/google";
+import "./minecraft.css";
 import "./globals.css";
 import "./githubMarkdown.css";
 
-import localFont from "next/font/local";
-
-const minecraftFont = localFont({
-  src: "../../public/unifont-16.0.01.otf",
-  display: "swap",
-});
+// import localFont from "next/font/local";
+// const minecraftFont = localFont({
+//   src: "../../public/unifont-16.0.01.otf",
+//   display: "swap",
+// });
 
 const googleFont = Murecho({ subsets: ["latin"] });
 
@@ -125,7 +125,7 @@ export default async function LocaleLayout({
           <NextIntlClientProvider messages={messages}>
             <TooltipProvider>
               <Header />
-              <main className="w-full h-full min-h-[calc(100dvh-64px)]">
+              <main className="w-full h-full">
                 {children}
               </main>
               <Footer />

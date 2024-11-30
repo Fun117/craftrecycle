@@ -30,15 +30,27 @@
       "links": "Links"
     }
   },
-  "Home": "Home",
   "project": {
     ":title": "Craft Recycle",
     ":type": "Data Pack",
+    "nav": {
+      "items": {
+        "description": "Description",
+        "files": "Files",
+        "images": "Images"
+      }
+    },
     "sidecontent": {
       "about project": "About Project",
       "created": "Created",
       "license": "License",
-      "members": "Members"
+      "members": "Members",
+      "source code": "source code"
+    }
+  },
+  "pages": {
+    "files": {
+      "coming soon": "COMING SOON"
     }
   }
 }

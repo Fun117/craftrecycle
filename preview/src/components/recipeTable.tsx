@@ -16,7 +16,7 @@ export function RecipeTable() {
   const [recipes, setRecipes] = useState<null | RecipeResponseType[]>(null);
   const [recipeTable, setRecipeTable] = useState<null | string>(null);
   const [isCopied, setIsCopied] = useState(false);
-  const [filePath, setFilePath] = useState<string>(""); // ファイルパスのステート
+  const [filePath, setFilePath] = useState<string>("/images/recipe/"); // ファイルパスのステート
 
   const copyToClipboard = async (text: string) => {
     try {

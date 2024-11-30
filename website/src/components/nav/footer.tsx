@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState, useTransition } from "react";
+import React, { useTransition } from "react";
 import config from "../../../richtpl.config";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { TLink } from "../ui/Tcomps";
@@ -39,7 +39,7 @@ function CustomLangSelectButton() {
   }
 
   return (
-    <Dropdown className="border-0 rounded-none minecraft-box-shadow bg-[var(--mc-core-off-black)]">
+    <Dropdown className="border-0 rounded-none minecraft-card-shadow-default bg-[var(--mc-core-off-black)]">
       <DropdownTrigger>
         <Button className="flex justify-start items-center gap-0 pl-0 md:!pl-4 bg-transparent rounded-none text text-sm">
           <Earth className="w-5 h-5 mr-1" />
@@ -68,7 +68,6 @@ function CustomLangSelectButton() {
 
 function Footer() {
   const t = useTranslations("Footer");
-  const [isLangSelectContent, setILangSelectContent] = useState<boolean>(false);
 
   function SocialButtons() {
     return (
@@ -147,7 +146,7 @@ function Footer() {
           <div className="grid gap-8 grid-cols-[repeat(auto-fill,minmax(140px,1fr))] lg:flex flex-wrap justify-between">
             <div className="flex flex-row justify-between items-center lg:items-stretch col-span-full">
               <img
-                src="/image/craftrecycle/icon-nobg-500x500.png"
+                src="/datapack/icons/icon-nobg-500x500.png"
                 width={100}
                 height={100}
                 alt="CraftRecycle"

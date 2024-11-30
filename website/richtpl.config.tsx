@@ -9,7 +9,7 @@ const config: Config = {
   tagline: "Craft Recycle",
 
   // URL to the favicon
-  favicon: "/favicon.ico",
+  favicon: "/datapack/icons/favicon.ico",
 
   // Production URL of the site
   url: "https://nextjs-rich-tpl.vercel.app",
@@ -70,7 +70,10 @@ const config: Config = {
       ],
       authors: { name: "Fun117", url: "https://fun117.dev" },
       creator: "Fun117",
-      icons: "/favicon.ico",
+      icons: {
+        icon: "/datapack/icons/favicon.ico",
+        apple: "/datapack/icons/favicon.png",
+      },
       generator: "Next.js",
       publisher: "Vercel",
       robots: "follow, index",
@@ -85,8 +88,18 @@ const config: Config = {
         // Items on the left side of the header
         nav: [
           {
-            label: "Home", // Label for the item
+            label: "project.nav.items.description", // Label for the item
             href: "/", // Internal URL path
+            i18n_text: true, // Whether to include locale prefix in the Text
+          },
+          {
+            label: "project.nav.items.files", // Label for the item
+            href: "/files", // Internal URL path
+            i18n_text: true, // Whether to include locale prefix in the Text
+          },
+          {
+            label: "project.nav.items.images", // Label for the item
+            href: "/images", // Internal URL path
             i18n_text: true, // Whether to include locale prefix in the Text
           },
         ],

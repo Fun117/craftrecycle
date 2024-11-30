@@ -4,6 +4,8 @@ import { useFormatter, useTranslations } from "next-intl";
 import datapack from "../../../datapack.config";
 import Link from "next/link";
 import { Tooltip } from "@nextui-org/react";
+import { MinecraftCard } from "../ui/minecraft/card";
+import { MinecraftButton } from "../ui/minecraft/button";
 const config = datapack;
 
 export default function ProjectSideContent() {
@@ -13,7 +15,7 @@ export default function ProjectSideContent() {
   const dateNow = new Date();
 
   return (
-    <section className="flex flex-col w-full lg:!w-[20%] p-5 minecraft-box-shadow">
+    <MinecraftCard className="flex flex-col w-full lg:!w-[20%] p-5">
       <div className="flex flex-col w-full mb-3">
         <h1 className="font-bold text-lg mb-3">{t("about project")}</h1>
         <section className="flex flex-col gap-2 justify-items-stretch w-full">
@@ -61,6 +63,11 @@ export default function ProjectSideContent() {
           })}
         </section>
       </div>
-    </section>
+      <div className="flex flex-col w-full my-3">
+        <Link href="https://github.com/Fun117/craftrecycle" target="_blank">
+          <MinecraftButton variant="transparent" className="w-full">{t("source code")}</MinecraftButton>
+        </Link>
+      </div>
+    </MinecraftCard>
   );
 }

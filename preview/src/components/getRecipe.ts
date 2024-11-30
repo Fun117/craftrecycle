@@ -11,7 +11,7 @@ export async function getRecipe() {
     const filePath = path.join(dirPath, file);
     const baseName = file.substring(0, file.indexOf("."));
     const imagePath = `./public/images/recipe/${baseName}.png`;
-    const image = fs.existsSync(imagePath) ? `/images/recipe/${baseName}.png` : `/images/recipe/_.png`;
+    const image = fs.existsSync(imagePath) ? `${baseName}.png` : `_.png`;
 
     const content = fs.readFileSync(filePath, "utf-8");
     const data = JSON.parse(content);

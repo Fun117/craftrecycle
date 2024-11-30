@@ -15,7 +15,6 @@ import {
   NavbarMenuItem,
   Link,
 } from "@nextui-org/react";
-import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
 import useViewportHeight from "@/hooks/useViewportHeight";
 
@@ -49,19 +48,6 @@ function Header() {
     return () => clearInterval(interval); // クリーンアップ
   }, [isMenuOpen, ViewportHeight]);
 
-  function Logo() {
-    return (
-      <Link href={config.themeConfig.header?.logo?.href} aria-label="Logo">
-        <img
-          src="/image/craftrecycle/icon-nobg-500x500.png"
-          width={40}
-          height={40}
-          alt="CraftRecycle"
-        />
-      </Link>
-    );
-  }
-
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
@@ -76,8 +62,21 @@ function Header() {
           className="sm:hidden"
         />
         <NavbarBrand className="items-center">
-          <Logo />
-          <h1 className="font-extrabold text-2xl">{t("project.:title")}</h1>
+          <Link
+            href={config.themeConfig.header?.logo?.href || "/"}
+            aria-label="Logo"
+          >
+            <img
+              src="/datapack/icons/icon-nobg-500x500.png"
+              width={40}
+              height={40}
+              alt="CraftRecycle"
+              className="hidden sm:!block"
+            />
+            <h1 className="font-extrabold text text-2xl">
+              {t("project.:title")}
+            </h1>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
