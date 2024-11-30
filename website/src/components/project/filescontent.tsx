@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValueText,
 } from "@/components/ui/select";
-import { createListCollection } from "@chakra-ui/react";
+import { createListCollection, Separator } from "@chakra-ui/react";
 import {
   DataPackConfigProps,
   DataPackReleaseProps,
@@ -20,6 +20,8 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ReleaseChannelBadge } from "./components/releasechannel";
+import { EmptyState } from "../ui/empty-state";
+import { Rocket } from "lucide-react";
 
 interface Item {
   label: string;
@@ -180,16 +182,24 @@ export default function ProjectFilesContent() {
                   <div className="flex w-full">
                     <h1 className="font-bold truncate">{release.title}</h1>
                   </div>
-                  <div className="flex flex-wrap justify-between items-center w-full">
-                    <div className="flex items-center gap-2">
+                  <div className="flex flex-row flex-wrap justify-between items-center w-full gap-2">
+                    <div className="flex items-center max-w-[80%] overflow-hidden">
                       <ReleaseChannelBadge
                         label={release.release_channel.charAt(0)}
                         type={release.release_channel}
                         className="w-5 h-5"
                       />
-                      <span className="font-normal text-sm">
-                        {release.game_versions[0]}
-                      </span>
+                      <Separator
+                        orientation="vertical"
+                        className="w-[0.5px] border-x-[1px] h-4 custom-border translate-y-[1px] mx-2"
+                      />
+                      <div className="flex gap-1 truncate overflow-hidden">
+                        {release.game_versions.map((version, index) => {
+                          return (
+                            <span key={index} className="truncate">{version}</span>
+                          );
+                        })}
+                      </div>
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="opacity-60">
@@ -204,7 +214,13 @@ export default function ProjectFilesContent() {
               </Link>
             ))
           ) : (
-            <div>No releases match the filters.</div>
+            <MinecraftCard variant="banner">
+              <EmptyState
+                icon={<Rocket />}
+                title="Not Found"
+                description="No releases match the filters."
+              ></EmptyState>
+            </MinecraftCard>
           )}
         </section>
       </div>

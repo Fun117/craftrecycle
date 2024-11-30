@@ -16,8 +16,8 @@ const datapack: DataPackConfigProps = {
   ],
   release: [
     {
-      version_id: "je-1.0.0-beta",
-      title: "Craft Recycle 1.0.0 Beta",
+      version_id: "je-1.21-beta",
+      title: "Craft Recycle 1.21 Beta",
       i18n_title: false,
       created_at: "2024/12/1",
       updated_at: "2024/12/1",
