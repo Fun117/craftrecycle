@@ -5,7 +5,7 @@
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/fun117/craftrecycle)
 ![GitHub Discussions](https://img.shields.io/github/discussions/fun117/craftrecycle)
 ![GitHub License](https://img.shields.io/github/license/fun117/craftrecycle)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Ffun117.github.io%2Fcraftrecycle)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fcraftrecycle.fun117.dev%2F)
 
 このプロジェクトは、Minecraftにおけるアイテムやブロックをリサイクル可能にするためのレシピを追加し、新たなクラフト体験を提供するデータパックです。
 

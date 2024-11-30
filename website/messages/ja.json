@@ -51,10 +51,15 @@
   "pages": {
     "files": {
       "coming soon": "近日公開",
+      "created_at": "作成日時",
+      "updated_at": "更新日時",
       "select game versions": "ゲームバージョンを選択",
+      "game versions": "ゲームバージョン",
       "all game versions": "すべてのゲームバージョン",
+      "game edition": "ゲームエディション",
       "select game edition": "ゲームのエディションを選択",
       "all game edition": "すべてのゲームエディション",
+      "release channel": "リリースチャンネル",
       "select release channel": "リリースチャンネルを選択",
       "all release channel": "すべてのリリースチャンネル",
       "notfound": "見つかりません",

@@ -8,6 +8,8 @@ import { Separator } from "@chakra-ui/react";
 import { MinecraftButton } from "../ui/minecraft/button";
 import Link from "next/link";
 import { MinecraftArrow } from "../ui/minecraft/arrow";
+import { Calendar, Gamepad2 } from "lucide-react";
+import { Tooltip } from "../ui/tooltip";
 
 export default function ProjectFilesPreviewContent({
   version_id,
@@ -21,7 +23,6 @@ export default function ProjectFilesPreviewContent({
   const release = datapack.release.find((r) => r.version_id === version_id[0]);
   // リリースが存在しない場合は null を返す
   if (!release) return null;
-
 
   // リリースが存在する場合は詳細を表示
   return (
@@ -54,15 +55,27 @@ export default function ProjectFilesPreviewContent({
             <div className="mb-3">
               <h2 className="text-xl font-bold truncate">{release.title}</h2>
             </div>
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="flex flex-wrap items-center gap-3">
               <ReleaseChannelBadge
                 label={release.release_channel.charAt(0)}
                 type={release.release_channel}
                 className="w-5 h-5"
               />
-              <span className="opacity-60">
-                {format.relativeTime(new Date(release.created_at), new Date())}
-              </span>
+              <Tooltip showArrow content={`${t("created_at")}`} openDelay={50}>
+                <span className="flex items-center opacity-60">
+                  <Calendar className="w-5 pr-1" />
+                  {format.relativeTime(
+                    new Date(release.created_at),
+                    new Date()
+                  )}
+                </span>
+              </Tooltip>
+              <Tooltip showArrow content={`${t("game edition")}`} openDelay={50}>
+                <span className="flex items-center opacity-60">
+                  <Gamepad2 className="w-5 pr-1" />
+                  {release.game_edition}
+                </span>
+              </Tooltip>
             </div>
             <hr className="w-full my-5" />
             <div className="flex flex-col gap-2">
@@ -74,7 +87,7 @@ export default function ProjectFilesPreviewContent({
               <h1 className="font-bold text-xl">{t("supported versions")}</h1>
               <section className="flex flex-wrap justify-start items-start">
                 {release.game_versions.map((version, index) => (
-                  <span key={index} className="flex items-center">
+                  <span key={index} className="flex items-center opacity-60">
                     {version}
                     {index + 1 < release.game_versions.length && (
                       <Separator
