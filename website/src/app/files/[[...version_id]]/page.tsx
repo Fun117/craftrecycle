@@ -11,7 +11,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 export async function generateMetadata({
   params,
 }: {
-  params: { version_id: string };
+  params: Promise<{ version_id: string }>;
 }): Promise<Metadata> {
   const version_id = (await params).version_id;
 

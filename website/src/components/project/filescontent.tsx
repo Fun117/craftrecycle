@@ -17,7 +17,6 @@ import {
   DataPackConfigProps,
   DataPackReleaseProps,
 } from "@/types/datapack.config";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ReleaseChannelBadge } from "./components/releasechannel";
 import { EmptyState } from "../ui/empty-state";
@@ -28,11 +27,11 @@ interface Item {
   value: string;
 }
 
-function generateGameVersions(datapackConfig: DataPackConfigProps): Item[] {
-  const t = useTranslations("pages.files");
-  const gameVersions: Item[] = [
-    { label: t("all game versions"), value: "all" },
-  ];
+function generateGameVersions(
+  label: string,
+  datapackConfig: DataPackConfigProps
+): Item[] {
+  const gameVersions: Item[] = [{ label: label, value: "all" }];
   datapackConfig.release.forEach((release) => {
     release.game_versions.forEach((version) => {
       if (!gameVersions.some((v) => v.value === version)) {
@@ -59,7 +58,7 @@ export default function ProjectFilesContent() {
 
   // 各セレクションのデータ作成
   const gameVersionCollection = createListCollection({
-    items: generateGameVersions(datapack),
+    items: generateGameVersions(t("all game versions"), datapack),
   });
 
   const gameEditionCollection = createListCollection({
@@ -196,7 +195,9 @@ export default function ProjectFilesContent() {
                       <div className="flex gap-1 truncate overflow-hidden">
                         {release.game_versions.map((version, index) => {
                           return (
-                            <span key={index} className="truncate">{version}</span>
+                            <span key={index} className="truncate">
+                              {version}
+                            </span>
                           );
                         })}
                       </div>
@@ -217,9 +218,9 @@ export default function ProjectFilesContent() {
             <MinecraftCard variant="banner">
               <EmptyState
                 icon={<Rocket />}
-                title="Not Found"
-                description="No releases match the filters."
-              ></EmptyState>
+                title={t("notfound")}
+                description={t("notfound_error")}
+              />
             </MinecraftCard>
           )}
         </section>

@@ -57,6 +57,8 @@
       "all game edition": "すべてのゲームエディション",
       "select release channel": "リリースチャンネルを選択",
       "all release channel": "すべてのリリースチャンネル",
+      "notfound": "見つかりません",
+      "notfound_error": "フィルターに一致するリリースがありません。",
       "back": "戻る",
       "download": "ダウンロード",
       "file details": "ファイルの詳細",

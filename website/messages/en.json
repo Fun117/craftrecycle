@@ -57,6 +57,8 @@
       "all game edition": "All Game Edition",
       "select release channel": "Select Release Channel",
       "all release channel": "All Release Channel",
+      "notfound": "Not Found",
+      "notfound_error": "No releases match the filters.",
       "back": "Back",
       "download": "Download",
       "file details": "File Details",

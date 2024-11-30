@@ -15,13 +15,13 @@ export default function ProjectFilesPreviewContent({
   version_id: string;
 }) {
   const t = useTranslations("pages.files");
+  const format = useFormatter();
 
   // リリースを検索
   const release = datapack.release.find((r) => r.version_id === version_id[0]);
   // リリースが存在しない場合は null を返す
   if (!release) return null;
 
-  const format = useFormatter();
 
   // リリースが存在する場合は詳細を表示
   return (
