@@ -12,7 +12,7 @@ const config: Config = {
   favicon: "/datapack/icons/favicon.ico",
 
   // Production URL of the site
-  url: "https://nextjs-rich-tpl.vercel.app",
+  url: "https://craftrecycle.fun117.dev",
 
   // Base URL pathname (for GitHub Pages deployment)
   baseUrl: "/",
@@ -51,7 +51,7 @@ const config: Config = {
       selectSwitch: false, // Whether to allow switching color modes
     },
     // URL to the social card image (replace with your project's image)
-    image: "/image/upload/front/nextjs/twitter-card.png",
+    image: "/images/minecraft-java.png",
     // Metadata for the site
     metadata: {
       keywords: [
