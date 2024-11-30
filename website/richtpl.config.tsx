@@ -51,22 +51,16 @@ const config: Config = {
       selectSwitch: false, // Whether to allow switching color modes
     },
     // URL to the social card image (replace with your project's image)
-    image: "/images/minecraft-java.png",
+    image: "/image/minecraft-java.jpeg",
     // Metadata for the site
     metadata: {
       keywords: [
-        "Template",
-        "i18n",
-        "template",
-        "Next.js",
-        "autoprefixer",
-        "rich",
-        "tailwindcss",
-        "framer-motion",
-        "next-themes",
+        "minecraft",
+        "datapack",
+        "minecraft-java",
         "vercel-hosting",
-        "next-intl",
-        "lucide-icons",
+        "nextjs",
+        "fun117",
       ],
       authors: { name: "Fun117", url: "https://fun117.dev" },
       creator: "Fun117",
