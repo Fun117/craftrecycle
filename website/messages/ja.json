@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "クラフトリサイクル | Minecraft Java Edition - データパック",
+    "title": "クラフトリサイクル",
     "description": "このプロジェクトは、Minecraftにおけるアイテムやブロックをリサイクル可能にするためのレシピを追加し、新たなクラフト体験を提供するデータパックです。"
   },
   "PageError": {
@@ -50,7 +50,20 @@
   },
   "pages": {
     "files": {
-      "coming soon": "近日公開"
+      "coming soon": "近日公開",
+      "select game versions": "ゲームバージョンを選択",
+      "all game versions": "すべてのゲームバージョン",
+      "select game edition": "ゲームのエディションを選択",
+      "all game edition": "すべてのゲームエディション",
+      "select release channel": "リリースチャンネルを選択",
+      "all release channel": "すべてのリリースチャンネル",
+      "notfound": "見つかりません",
+      "notfound_error": "フィルターに一致するリリースがありません。",
+      "back": "戻る",
+      "download": "ダウンロード",
+      "file details": "ファイルの詳細",
+      "file name": "ファイル名前",
+      "supported versions": "サポートされているバージョン"
     }
   }
 }

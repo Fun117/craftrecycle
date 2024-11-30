@@ -11,6 +11,7 @@ const MinecraftArrowVariants = cva("minecraft-arrow", {
     },
     direction: {
       default: "minecraft-arrow-right",
+      left: "minecraft-arrow-left"
     },
   },
   defaultVariants: {

@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Craft Recycle | Minecraft Java Edition - Data Pack",
+    "title": "Craft Recycle",
     "description": "This project is a data pack that provides a new crafting experience by adding recipes to make items and blocks recyclable in Minecraft."
   },
   "PageError": {
@@ -50,7 +50,20 @@
   },
   "pages": {
     "files": {
-      "coming soon": "COMING SOON"
+      "coming soon": "COMING SOON",
+      "select game versions": "Select Game Versions",
+      "all game versions": "All Game Versions",
+      "select game edition": "Select Game Edition",
+      "all game edition": "All Game Edition",
+      "select release channel": "Select Release Channel",
+      "all release channel": "All Release Channel",
+      "notfound": "Not Found",
+      "notfound_error": "No releases match the filters.",
+      "back": "Back",
+      "download": "Download",
+      "file details": "File Details",
+      "file name": "File Name",
+      "supported versions": "Supported Versions"
     }
   }
 }
