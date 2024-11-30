@@ -71,7 +71,7 @@ const config: Config = {
       generator: "Next.js",
       publisher: "Vercel",
       robots: "follow, index",
-      metadataBase: new URL("https://nextjs-rich-tpl.vercel.app"),
+      metadataBase: new URL("https://craftrecycle.fun117.dev"),
     },
     // Header configuration
     header: {
