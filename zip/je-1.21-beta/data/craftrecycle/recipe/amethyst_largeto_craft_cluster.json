@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "craftrecycle_amethyst_craft",
+    "category": "misc",
+    "show_notification": true,
+    "pattern": [
+        " # ",
+        "SLS",
+        "LLL"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:medium_amethyst_bud"
+        },
+        "S": {
+            "item": "minecraft:small_amethyst_bud"
+        },
+        "L": {
+            "item": "minecraft:large_amethyst_bud"
+        }
+    },
+    "result": {
+        "id": "minecraft:amethyst_cluster",
+        "count": 1
+    }
+}

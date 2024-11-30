@@ -1,0 +1,56 @@
+{
+  "Metadata": {
+    "title": "Craft Recycle | Minecraft Java Edition - Data Pack",
+    "description": "このプロジェクトは、Minecraftにおけるアイテムやブロックをリサイクル可能にするためのレシピを追加し、新たなクラフト体験を提供するデータパックです。"
+  },
+  "PageError": {
+    "title": "Unknown error",
+    "retry": "Retry"
+  },
+  "PageNotFound": {
+    "title": "Page not found"
+  },
+  "Theme": {
+    "Toggle theme": "Toggle theme",
+    "Mode": "Mode",
+    "Light": "Light",
+    "Dark": "Dark",
+    "System": "System"
+  },
+  "Languages": {
+    "Language": "Language",
+    "Select a language": "Select a language"
+  },
+  "Footer": {
+    "footerText": "Copyright © 2024 Fun117. All rights reserved.",
+    "items": {
+      "About developer": "About Developer",
+      "owner": "Owner",
+      "contributors": "Contributors",
+      "links": "Links"
+    }
+  },
+  "project": {
+    ":title": "Craft Recycle",
+    ":type": "Data Pack",
+    "nav": {
+      "items": {
+        "description": "Description",
+        "files": "Files",
+        "images": "Images"
+      }
+    },
+    "sidecontent": {
+      "about project": "About Project",
+      "created": "Created",
+      "license": "License",
+      "members": "Members",
+      "source code": "source code"
+    }
+  },
+  "pages": {
+    "files": {
+      "coming soon": "COMING SOON"
+    }
+  }
+}
