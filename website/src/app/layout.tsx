@@ -20,11 +20,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 
 // ui
-import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "@/components/nav/header";
 import Footer from "@/components/nav/footer";
 
-import { Theme } from "@radix-ui/themes";
+import { Provider } from "@/components/ui/provider";
 
 export async function generateMetadata(): Promise<Metadata> {
   const lang = await getLocale();
@@ -121,17 +120,13 @@ export default async function LocaleLayout({
         className={`${googleFont.className} relative w-full h-full min-h-dvh overflow-x-clip`}
         suppressHydrationWarning
       >
-        <Theme>
+        <Provider>
           <NextIntlClientProvider messages={messages}>
-            <TooltipProvider>
-              <Header />
-              <main className="w-full h-full">
-                {children}
-              </main>
-              <Footer />
-            </TooltipProvider>
+            <Header />
+            <main className="w-full h-full">{children}</main>
+            <Footer />
           </NextIntlClientProvider>
-        </Theme>
+        </Provider>
       </body>
     </html>
   );

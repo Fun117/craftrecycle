@@ -4,12 +4,15 @@ import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import {
-  Dialog,
+  DialogBody,
+  DialogCloseTrigger,
   DialogContent,
-  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogRoot,
   DialogTitle,
   DialogTrigger,
-} from "../ui/dialog";
+} from "@/components/ui/dialog";
 import { MinecraftCard } from "../ui/minecraft/card";
 
 export default function GetMarkdownImagesContent({ url }: { url: string }) {
@@ -36,21 +39,21 @@ export default function GetMarkdownImagesContent({ url }: { url: string }) {
         img(props) {
           const { src, alt } = props;
           return (
-            <Dialog>
+            <DialogRoot placement="center">
               <DialogTrigger>
                 <div
                   className="relative w-[200px] h-[200px] bg-left bg-cover bg-no-repeat"
                   style={{ backgroundImage: `url(${src})` }}
                 ></div>
               </DialogTrigger>
-              <DialogContent className="border-none p-0">
+              <DialogContent className="relative border-none p-0">
                 <MinecraftCard>
                   <DialogTitle />
-                  <DialogDescription />
                   <img alt={alt} src={src} />
                 </MinecraftCard>
+                <DialogCloseTrigger className="absolute top-0 right-0 bg opacity-50" />
               </DialogContent>
-            </Dialog>
+            </DialogRoot>
           );
         },
         p(props) {
