@@ -18,7 +18,7 @@ const config: Config = {
   baseUrl: "/",
 
   // GitHub deployment configuration
-  organizationName: "fun117", // GitHub organization/user name
+  organizationName: "toakiryu", // GitHub organization/user name
   projectName: "craftrecycle", // GitHub repository name
 
   // Internationalization (i18n) configuration
@@ -60,10 +60,10 @@ const config: Config = {
         "minecraft-java",
         "vercel-hosting",
         "nextjs",
-        "fun117",
+        "toakiryu",
       ],
-      authors: { name: "Fun117", url: "https://fun117.dev" },
-      creator: "Fun117",
+      authors: { name: "toakiryu", url: "https://fun117.dev" },
+      creator: "toakiryu",
       icons: {
         icon: "/datapack/icons/favicon.ico",
         apple: "/datapack/icons/favicon.png",
@@ -123,13 +123,13 @@ const config: Config = {
           contents: [
             {
               label: "owner",
-              href: "https://github.com/Fun117",
+              href: "https://github.com/toakiryu",
               target: "_blank",
               i18n_text: true,
             },
             {
               label: "contributors",
-              href: "https://github.com/Fun117/craftrecycle/graphs/contributors",
+              href: "https://github.com/toakiryu/craftrecycle/graphs/contributors",
               target: "_blank",
               i18n_text: true,
             },
