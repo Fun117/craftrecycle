@@ -4,12 +4,12 @@ const datapack: DataPackConfigProps = {
   created_at: "2024-11-29",
   license: {
     label: "CC-BY-SA-4.0",
-    link: "https://github.com/Fun117/craftrecycle/blob/main/LICENSE.txt",
+    link: "https://github.com/toakiryu/craftrecycle/blob/main/LICENSE.txt",
   },
   members: [
     {
-      avatar: "https://github.com/fun117.png",
-      username: "Fun117",
+      avatar: "https://github.com/toakiryu.png",
+      username: "ToaKiryu",
       role: "owner",
       website: "https://fun117.dev",
     },
