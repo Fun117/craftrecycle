@@ -64,7 +64,7 @@ export default function ProjectSideContent() {
         </section>
       </div>
       <div className="flex flex-col w-full my-3">
-        <Link href="https://github.com/Fun117/craftrecycle" target="_blank">
+        <Link href="https://github.com/toakiryu/craftrecycle" target="_blank">
           <MinecraftButton variant="transparent" className="w-full">{t("source code")}</MinecraftButton>
         </Link>
       </div>
