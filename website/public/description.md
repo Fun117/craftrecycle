@@ -1,11 +1,11 @@
 # クラフトリサイクル
 
-![GitHub Release](https://img.shields.io/github/v/release/fun117/craftrecycle)
-![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/fun117/craftrecycle)
-![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/fun117/craftrecycle)
-![GitHub Discussions](https://img.shields.io/github/discussions/fun117/craftrecycle)
-![GitHub License](https://img.shields.io/github/license/fun117/craftrecycle)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fcraftrecycle.fun117.dev%2F)
+![GitHub Release](https://img.shields.io/github/v/release/toakiryu/craftrecycle)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/toakiryu/craftrecycle)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/toakiryu/craftrecycle)
+![GitHub Discussions](https://img.shields.io/github/discussions/toakiryu/craftrecycle)
+![GitHub License](https://img.shields.io/github/license/toakiryu/craftrecycle)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fcraftrecycle.toakiryu.com%2F)
 
 このプロジェクトは、Minecraftにおけるアイテムやブロックをリサイクル可能にするためのレシピを追加し、新たなクラフト体験を提供するデータパックです。
 
@@ -33,7 +33,7 @@
 > ⚠ **注意**  
 > このデータパックは **1.21 以降のバージョン** を対象としているため、1.20.x 以前のバージョンでは動作しません。ご利用の際はゲームのバージョンをご確認ください。
 
-将来的なバージョンアップや互換性の更新については、[リポジトリ](https://github.com/Fun117/craftrecycle)の更新情報をご確認ください。
+将来的なバージョンアップや互換性の更新については、[リポジトリ](https://github.com/toakiryu/craftrecycle)の更新情報をご確認ください。
 
 ## 公開プラットフォーム
 
@@ -84,11 +84,11 @@
 データパックを使用した動画や配信を行う際は、概要欄やコメント欄など視聴者が確認できる場所にクレジットの記載をお願いします。以下は例です：
 
 ```text
-▼ クラフトリサイクル / 制作: Fun117
-https://craftrecycle.fun117.dev
+▼ クラフトリサイクル / 制作: toakiryu
+https://craftrecycle.toakiryu.com
 ```
 
-二次配布および自作発言は固くお断りしています。不具合やバグの報告は[こちら](https://github.com/Fun117/craftrecycle/issues)からお願いいたします。
+二次配布および自作発言は固くお断りしています。不具合やバグの報告は[こちら](https://github.com/toakiryu/craftrecycle/issues)からお願いいたします。
 
 ---
 
@@ -96,6 +96,6 @@ https://craftrecycle.fun117.dev
 
 追加されるレシピの詳細は以下のリンクから確認可能です：
 
-- [レシピ一覧を見る](https://github.com/Fun117/craftrecycle/blob/main/README/recipe.md)
+- [レシピ一覧を見る](https://github.com/toakiryu/craftrecycle/blob/main/README/recipe.md)
 
-完全な情報を簡単に閲覧したい場合、[GitHubリポジトリ](https://github.com/Fun117/craftrecycle)をご確認ください。
+完全な情報を簡単に閲覧したい場合、[GitHubリポジトリ](https://github.com/toakiryu/craftrecycle)をご確認ください。
